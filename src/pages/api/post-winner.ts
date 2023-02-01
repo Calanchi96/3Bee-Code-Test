@@ -66,13 +66,19 @@ function returnWinningCondition(val: any): any {
   const winningCondition3 = ["6","7","8"];
   const winningCondition4 = ["0","4","8"];
   const winningCondition5 = ["2","4","6"];
+  const winningCondition6 = ["0","3","6"];
+  const winningCondition7 = ["1","4","7"];
+  const winningCondition8 = ["3","4","8"];
 
   return (
     winningCondition1.every((x: any) => xPos.includes(x)) ||
     winningCondition2.every((x: any) => xPos.includes(x)) ||
     winningCondition3.every((x: any) => xPos.includes(x)) ||
     winningCondition4.every((x: any) => xPos.includes(x)) ||
-    winningCondition5.every((x: any) => xPos.includes(x))
+    winningCondition5.every((x: any) => xPos.includes(x)) ||
+    winningCondition6.every((x: any) => xPos.includes(x)) ||
+    winningCondition7.every((x: any) => xPos.includes(x)) ||
+    winningCondition8.every((x: any) => xPos.includes(x))
     ) ? 
   "X" : 
   (
@@ -80,7 +86,11 @@ function returnWinningCondition(val: any): any {
     winningCondition2.every((o: any) => oPos.includes(o)) ||
     winningCondition3.every((o: any) => oPos.includes(o)) ||
     winningCondition4.every((o: any) => oPos.includes(o)) ||
-    winningCondition5.every((o: any) => oPos.includes(o))) ? 
+    winningCondition5.every((o: any) => oPos.includes(o)) || 
+    winningCondition6.every((o: any) => oPos.includes(o)) ||
+    winningCondition7.every((o: any) => oPos.includes(o)) ||
+    winningCondition8.every((o: any) => oPos.includes(o))
+   ) ? 
   "O" : 
   false;
 }
