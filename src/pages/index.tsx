@@ -55,7 +55,7 @@ export default function Home() {
       <main className="mainContainer">
         <div className="headerPart">
           Current Player: {currentPlayer}
-          <button className="headerButton px-4" onClick={() => resetGame()}>RESET</button>
+          <button className="headerButton px-5 py-2" onClick={() => resetGame()}>RESET</button>
         </div>
         <Gameboard onChange={handleChange} className={gameStatus}>
           {BoardBlockCount.map((i) => 
