@@ -43,7 +43,7 @@ export default function Home() {
     handleChange(boardState, currentPlayer);
   },[boardState])
 
-  const handleClick = (event: any, index: number) => {
+  const handleClick = (event: any, index: any) => {
     const newBoardState: any = [...boardState, { index: index, player: currentPlayer}];
     setBoardState(newBoardState);
     setCurrentPlayer(currentPlayer == "X" ? "O" : "X");
