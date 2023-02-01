@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --main: #1d293b;
+    --main-dark: #10172a;
+    --main-light: #485569;
+    --main-button: #64758a;
+    --white: #fff;
+    --black: #000;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main);
+    flex-direction: column;
+}
+
+.headerPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.headerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--main-button);
+    color: var(--button-color);
+}

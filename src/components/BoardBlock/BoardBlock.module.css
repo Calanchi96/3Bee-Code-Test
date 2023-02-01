@@ -1,0 +1,13 @@
+.BoardBlock {
+    background-color: var(--main-light);
+    height: 100px;
+    width: 100px;
+}
+
+.clicked.X::afetr {
+    content: "X";
+}
+
+.clicked.O::afetr {
+    content: "X";
+}

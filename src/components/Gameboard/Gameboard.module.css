@@ -1,0 +1,4 @@
+.Gameboard {
+    border-radius: 5px;
+    background-color: var(--main-dark);
+}
