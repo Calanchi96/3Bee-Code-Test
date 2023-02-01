@@ -44,10 +44,8 @@ export default function Home() {
   },[boardState])
 
   const handleClick = (event: any, index: number) => {
-    setBoardState([
-      ...boardState,
-      { index: index, player: currentPlayer }
-    ]);
+    const newBoardState: any = [...boardState, { index: index, player: currentPlayer}];
+    setBoardState(newBoardState);
     setCurrentPlayer(currentPlayer == "X" ? "O" : "X");
   }
 
@@ -66,7 +64,7 @@ export default function Home() {
             key={i} 
             player={getCurrentBlock(i)?.player}
             onClick={(ev: any) => !!getCurrentBlock(i) ? null : handleClick(ev, i)}
-          />)}
+          >{getCurrentBlock(i)?.player}</BoardBlock>)}
         </Gameboard>
       </main>
     </>
