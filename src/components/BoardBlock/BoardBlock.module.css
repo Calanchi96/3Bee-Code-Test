@@ -4,10 +4,14 @@
     width: 100px;
 }
 
-.clicked.X::afetr {
-    content: "X";
-}
-
-.clicked.O::afetr {
-    content: "X";
+.PlayerValue {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }

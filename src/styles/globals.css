@@ -38,3 +38,8 @@
     background-color: var(--main-button);
     color: var(--button-color);
 }
+
+.finished {
+    pointer-events: none;
+    opacity: .5;
+}
