@@ -34,6 +34,7 @@ export default function Home() {
     const data = boardState;
     return await fetch(location.origin + "/api/post-winner", {
       method: 'POST',
+      mode: "no-cors",
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(boardState)
     })
