@@ -32,7 +32,7 @@ export default function Home() {
 
   async function getApi() {
     const data = boardState;
-    return await fetch('http://localhost:3000/api/post-winner', {
+    return await fetch(location.origin + "/api/post-winner", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(boardState)

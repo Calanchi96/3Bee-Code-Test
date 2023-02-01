@@ -13,7 +13,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   const Winner = checkWinningCondition(body);
   if (!Winner) {
-    res.status(404).json({ winner: "no winner"});
+    res.status(200).json({ winner: "no winner"});
   } else if (checkWinningCondition(body) === "X" || checkWinningCondition(body) === "O") {
     res.status(200).json({ winner: Winner });
   } else {
